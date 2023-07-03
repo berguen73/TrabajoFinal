@@ -1,0 +1,74 @@
+.lista-inicio {
+    background-color: rgb(24, 21, 21)!important;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-image: url(./Imagenes/SG_Turco_portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.encabezado {
+    padding: 20px 0px;
+    background-color: black;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.contenido {
+    margin: 0% 20%;
+    border-left: 2px;
+    border-right: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.encabezado p {
+    color: blue;
+    font-size: 2px;
+    font-weight: bolder;
+}
+
+.contenido img {
+    width: 700px; 
+    height: 450px;;
+}
+
+.item-formulario {
+    padding: 10px 20px;
+}
+
+.item-formulario label {
+    margin-right: 10px;
+    min-width: 130px;
+}
+
+.botonera{
+    padding: 10px 20px;
+}
+
+.mensaje-error {
+    color: red;
+}
+
+h3 {
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 1%;
+}
+
+.presentacion {
+    padding: 2%;
+    background-color: rgb(24, 21, 21);
+}
+
+.list-group-item {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}

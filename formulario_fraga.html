@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./formulario_fraga.css">
+    <script src="./formulario_fraga.js"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-column align-items-center encabezado">
+            <!-- Aquí va el encabezado -->
+            <h1>Fraga Luthier</h1>
+            <h2>Servicio de Lutheria</h2>
+        </div>
+        <!-- Aquí va el contenido -->
+        <div class="d-flex flex-column contenido">
+            <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./fraga_inicio.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./fraga_luthier.html">¿Quiénes
+                                    somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./galeria.html">Imágenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="./formulario_fraga.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Redes Sociales
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="https://www.instagram.com/fragaluthier/">Instagram</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.facebook.com/FragaLuthier/">Facebook</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div class="">
+                    <!-- Acá va el contenido -->
+                    <div class="div-formulario">
+                        <h3>Contactanos</h3>
+                        <form>
+                            <div class="d-flex flex-row align-items-center item-formulario">
+                                <label class="form-label">Nombre:</label>
+                                <div class="flex-grow-1"></div>
+                                <input class="form-control" type="text" id="nombre">
+                                <br>
+                                <small class="mensaje-error" id="error-nombre"></small>
+                            </div>
+                            <div class="d-flex flex-row align-items-center item-formulario">
+                                <label class="form-label">Instrumento:</label>
+                                <div class="flex-grow-1"></div>
+                                <select class="form-select" aria-label="Default select example" id="instrumento">
+                                    <option selected value="">Elige una opción</option>
+                                    <option value="Guitarra Eléctrica">Guitarra Eléctrica</option>
+                                    <option value="Guitarra Clásica">Guitarra Clásica</option>
+                                    <option value="Guitarra Acústica">Guitarra Acústica</option>
+                                    <option value="Bajo Eléctrico">Bajo Eléctrico</option>
+                                    <option value="Otro instrumento de cuerda">Otro instrumento de cuerda</option>
+                                </select>
+                                <small class="mensaje-error"></small>
+                            </div>
+                            <div class="d-flex flex-row align-items-center item-formulario">
+                                <label class="form-label">Servicio:</label>
+                                <div class="flex-grow-1"></div>
+                                <select class="form-select" aria-label="Default select example" id="servicio">
+                                    <option selected value="">Elige una opción</option>
+                                    <option value="Calibración/Mantenimiento">Calibración/Mantenimiento</option>
+                                    <option value="Reparación">Reparación</option>
+                                    <option value="Construcción">Construcción</option>
+                                </select>
+                                <small class="mensaje-error"></small>
+                            </div>
+                            <div class="d-flex flex-row align-items-center item-formulario">
+                                <label class="form-label">E-mail:</label>
+                                <div class="flex-grow-1"></div>
+                                <input class="form-control" type="e-mail" id="email">
+                                <small class="mensaje-error" id="error-email"></small>
+                            </div>
+                            <div class="d-flex flex-row align-items-center item-formulario">
+                                <label class="form-label">Mensaje:</label>
+                                <div class="flex-grow-1"></div>
+                                <input class="form-control" type="text" id="mensaje">
+                                <small class="mensaje-error" id="error-mensaje"></small>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end botonera">
+                                <button id="btn-enviar" type="button" class="btn btn-outline-light">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

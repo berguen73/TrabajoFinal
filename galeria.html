@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imágenes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./galeria.css">
+    <script src="./galeria.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-column align-items-center encabezado">
+                <!-- Aquí va el encabezado -->
+                <h1>Fraga Luthier</h1>
+                <h2>Servicio de Lutheria</h2>
+            </div>
+            <!-- Aquí va el contenido -->
+            <div class="d-flex flex-column contenido">
+                <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./fraga_inicio.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./fraga_luthier.html">¿Quiénes
+                                        somos?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./galeria.html">Imágenes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="./formulario_fraga.html">Contactanos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Redes Sociales
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="https://www.instagram.com/fragaluthier/">Instagram</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://www.facebook.com/FragaLuthier/">Facebook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+
+                </div>
+            </div>
+            <div class="full-img" id="imgFullBox">
+                <img src="./Imagenes/fraga_pala.jpg" alt="foto seleccionada" id="imgFull">
+                <span onclick="cerrarImgFull()">X</span>
+            </div>
+            <div class="img-gallery">
+                <img src="./Imagenes/raul_multifoil.jpg" alt="Les Paul Multifoil" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/fraga_pala.jpg" alt="Fraga Pala" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/fuera_de_foco.jpg" alt="Fuera de foco" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/huequito_lp.jpg" alt="LP Huequito" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/llave_de_posiciones.jpg" alt="Toggle Switch" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/Sg_cerca_2.jpg" alt="SG close-up" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/Lp_flama.jpg" alt="Flame Top" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/LP_linda.jpg" alt="LP Linda" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/LP_ojo.jpg" alt="LP efecto circular" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/mic_de_cerca.jpg" alt="pickup close-up" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/otra_lp.jpg" alt="Otra LP" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/sg_turco_2.jpg" alt="SG-2" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/strat_relic.jpg" alt="Strat Relic" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/tele_relic.jpg" alt="Tele Relic" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/SG_Turco_portada.jpg" alt="SG Portada" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/LP_flameada.jpg" alt="Les Paul Flameada" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/perilla_pote.jpg" alt="Perilla pote" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/toggle_switch_2.jpg" alt="Toggle Switch 2" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/Bajo_de_6.jpg" alt="Bajo de 6 cuerdas" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/PRS_hueca.jpg" alt="PRS huecaa" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/SG_portada_2.jpg" alt="SG" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/LP_huequita_.jpg" alt="Les Paul Hueca Puerta" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/PRS_sillon.jpg" alt="Les Paul Multifoil" onclick="abrirImgFull(this.src)">
+                <img src="./Imagenes/mic_de_cerca_2.jpg" alt="pickup close-up-2" onclick="abrirImgFull(this.src)">
+            </div>
+
+        </div>
+    </div>
+    <script src="./galeria.js"></script>
+</body>
+
+</html>
